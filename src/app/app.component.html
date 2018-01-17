@@ -1,10 +1,30 @@
 <div class="ui grid">
   <div class="four wide columns">
   	<h1>{{ title }} </h1>
+	<div class="ui animated button" tabindex="0" (click)="toggleSideBar()" >
+	  <div class="visible content">SideBar</div>
+	  <div class="hidden content">
+	    <i class="right arrow icon"></i>
+	  </div>
+	</div>
     <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
   </div>
   <div class="twelve wide column">
     <votes-app></votes-app>
   </div>
 </div>
+<div class="ui left demo vertical inverted sidebar labeled icon menu">
+	  <a class="item">
+	    <i class="home icon"></i>
+	    Home
+	  </a>
+	  <a class="item">
+	    <i class="block layout icon"></i>
+	    Topics
+	  </a>
+	  <a class="item">
+	    <i class="smile icon"></i>
+	    Friends
+	  </a>
+	</div>
 
