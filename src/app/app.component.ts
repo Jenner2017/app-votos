@@ -8,7 +8,7 @@ declare var $:any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My app of votos';
+  title = 'Mi app de votos';
 
   toggleSideBar():void{
   	$('.ui.labeled.icon.sidebar').sidebar('toggle');
