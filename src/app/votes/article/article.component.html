@@ -1,0 +1,40 @@
+<div class="votes">
+	<div class="four wide column">
+		<div class="ui statistics">
+			<div class="statistic">
+				<div class="value">
+					<i class="book icon"></i>
+					{{ article.votes }}
+				</div>
+				<div class="label">
+					Points
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="twelve wide column" id="articulos">
+		<a href="{{article.link}} ">{{article.title}} </a>
+		<div class="meta">
+			{{article.domain()}}
+		</div>
+		<div class="ui list horizontal">
+			<div class="item">
+				<a href (click)="votesUp()">
+					<i class="pointing up icon"></i>
+					<div class="content">
+						Vote UP
+					</div>
+					
+				</a>
+			</div>
+			<div class="item">
+				<a href (click)="votesDown()">
+					<i class="pointing down icon"></i>
+					<div class="content">
+						Vote Down
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
